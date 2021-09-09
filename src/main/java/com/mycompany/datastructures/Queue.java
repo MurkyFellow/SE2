@@ -17,12 +17,14 @@ public class Queue {
             index++;
         }
         else{
-            System.out.println("Latest value being replaced: " + values[index-1]);
-            values[index-1] = input;
+            throw new QueueException("Stack is full");
         }
     }
     
     public int get(){
+        if (index < 0){
+            throw new QueueException("Stack is empty");
+        }
         int position = index-1;
         index--;
         return values[position];
