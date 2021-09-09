@@ -15,10 +15,17 @@ public class Queue {
         if (position < values.length){
             values[position] = input;
             index++;
-        }        
+        }
+        else{
+            throw new QueueException("Stack is full");
+        }
+
     }
     
     public int get(){
+        if (index < 0){
+            throw new QueueException("Stack is empty");
+        }
         int position = index-1;
         index--;
         return values[position];
