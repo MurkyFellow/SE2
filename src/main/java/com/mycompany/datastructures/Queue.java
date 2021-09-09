@@ -15,11 +15,7 @@ public class Queue {
         if (position < values.length){
             values[position] = input;
             index++;
-        }
-        else{
-            System.out.println("Latest value being replaced: " + values[index-1]);
-            values[index-1] = input;
-        }
+        }        
     }
     
     public int get(){
