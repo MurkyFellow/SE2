@@ -25,6 +25,7 @@ public class Main {
             }  
         }
         System.out.println("");
+        System.out.println("Peeking on the front element " + queue.peek());
         while (!queue.isEmpty()){
             System.out.println(queue.get());
         }

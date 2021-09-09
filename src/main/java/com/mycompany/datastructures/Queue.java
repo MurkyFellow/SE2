@@ -35,4 +35,8 @@ public class Queue {
     public boolean isFull(){
         return index == values.length;
     }
+    
+    public int peek(){
+        return values[0];
+    }
 }
